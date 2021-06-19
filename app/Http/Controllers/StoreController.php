@@ -78,7 +78,7 @@ class StoreController extends Controller
 
     private function storeImageLogo($file)
     {
-        return Storage::put('store_logos', $file, 'public');
+        return Storage::put('public/store_logos', $file, 'public');
     }
 
     /**
