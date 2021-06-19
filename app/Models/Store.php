@@ -17,4 +17,8 @@ class Store extends Model
         return Storage::url($value);
     }
 
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
 }
