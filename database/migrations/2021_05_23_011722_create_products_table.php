@@ -19,7 +19,7 @@ class CreateProductsTable extends Migration
             $table->unsignedBigInteger('store_id');
             $table->string('slug');
             $table->text('primary_description');
-            $table->string('secondary_description')->nullable();
+            $table->text('secondary_description')->nullable();
             $table->double('amount', 10, 2);
             $table->string('image');
             $table->string('jumia_product_link')->nullable();
