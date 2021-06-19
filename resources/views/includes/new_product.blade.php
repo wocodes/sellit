@@ -98,7 +98,7 @@
                 <label for="name" class="col-md-3 col-form-label text-md-right">{{ __('Product Link (Jumia)') }}</label>
 
                 <div class="col-md-6">
-                    <input id="jumia_product_link" type="text" class="form-control @error('jumia_product_link') is-invalid @enderror" name="jumia_product_link" value="{{ old('jumia_product_link') }}" required autocomplete="name" autofocus>
+                    <input id="jumia_product_link" type="text" class="form-control @error('jumia_product_link') is-invalid @enderror" name="jumia_product_link" value="{{ old('jumia_product_link') }}" autocomplete="name" autofocus>
 
                     @error('jumia_product_link')
                         <span class="invalid-feedback" role="alert">
@@ -113,7 +113,7 @@
                 <label for="name" class="col-md-3 col-form-label text-md-right">{{ __('Product Link (Konga)') }}</label>
 
                 <div class="col-md-6">
-                    <input id="konga_product_link" type="text" class="form-control @error('konga_product_link') is-invalid @enderror" name="konga_product_link" value="{{ old('konga_product_link') }}" required autocomplete="name" autofocus>
+                    <input id="konga_product_link" type="text" class="form-control @error('konga_product_link') is-invalid @enderror" name="konga_product_link" value="{{ old('konga_product_link') }}" autocomplete="name" autofocus>
 
                     @error('konga_product_link')
                         <span class="invalid-feedback" role="alert">
