@@ -55,7 +55,7 @@ class ProductController extends Controller
         $image_path = Storage::put('public/products', $request->image, 'public');
         $slug = Str::slug($request->name);
 
-        $product = auth()->user()->stores()->first()->create([
+        $product = auth()->user()->stores()->first()->products()->create([
             'name' => $request->name,
             'slug' => $slug,
             'primary_description' => $request->primary_description,
