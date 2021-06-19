@@ -15,7 +15,7 @@ class HasStore
      */
     public function handle($request, Closure $next)
     {
-        if(!auth()->user()->stores()->count()) {
+        if(auth()->user() && !auth()->user()->stores()->count()) {
             return redirect()->route('store.create');
         }
 
